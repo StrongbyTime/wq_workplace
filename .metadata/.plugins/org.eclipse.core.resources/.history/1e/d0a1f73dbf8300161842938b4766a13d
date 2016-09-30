@@ -1,0 +1,6 @@
+import java.util.*;
+public class point {
+	private double x,y;
+	
+
+}
