@@ -19,7 +19,7 @@ public class shype{
 	}
 	 public static void main(String[] args) {
 		shype pattern=new shype();
-		Scanner input=new Scanner(Syystem.in);
+		Scanner input=new Scanner(System.in);
 		pattern.width=input.nextDouble();
 		pattern.length=input.nextDouble();
 		pattern.radius=input.nextDouble();
