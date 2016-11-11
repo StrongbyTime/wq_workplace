@@ -1,0 +1,41 @@
+1.设置用户信息
+git config --global user.name "your name"
+git config --global user.email "your email"
+
+2.克隆github远程库
+
+//事先在github上添加了电脑的SSH
+git clone git@github.com:your name/your repository.git
+
+//不必添加SSH,但push时需要输入github用户名和密码
+git clone https://github.com/yourname/your repository.git
+
+默认clone在当前命令行所在目录，可先cd切换到想要的目录然后clone，也可在命令后添加本地目录，如：
+想clone在E:\workspace中，可用：
+
+git clone https://github.com/yourname/your repository.git E:/workspace
+
+注意：必须clone在一个空目录下，所以建议目录名设置为远程库的名字
+
+3.进入库
+
+cd your repository
+
+do some changes,
+
+git add xxx.txt xx.txt
+
+OR git add .//添加当前当前所有更改到暂存区
+
+rm xxx.txt  //删除xxx.txt，可git checkout -- xxx.txt从版本库恢复
+git rm xxx.txt //从版本库中删除该文件,需重新提交
+
+git statue //查看仓库状态
+
+git commit -m "your description"
+
+git log   //查看提交的版本信息
+
+4.推送到远程库
+
+git remote 
