@@ -1,0 +1,10 @@
+package Listdemo;
+import java.io.File;
+
+public class list_fuction {
+	public static void main(String[] args){
+//		根据文件名称创建File对象
+		File file==new File("C:\\");
+		
+	}
+}

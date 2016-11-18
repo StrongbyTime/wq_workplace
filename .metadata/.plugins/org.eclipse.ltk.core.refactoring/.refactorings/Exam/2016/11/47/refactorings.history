@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;transpose.transposition.array&apos; in &apos;transpose.transposition&apos;&#x0D;&#x0A;- Original project: &apos;Exam&apos;&#x0D;&#x0A;- Original element: &apos;transpose.transposition.array&apos;&#x0D;&#x0A;- Getter method name: &apos;getArray&apos;&#x0D;&#x0A;- Setter method name: &apos;setArray&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;array&apos;" flags="589830" getter="getArray" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;transpose{transposition.java[transposition^array" insertion="-1" setter="setArray" stamp="1479108177820" version="1.0" visibility="1"/>
+</session>

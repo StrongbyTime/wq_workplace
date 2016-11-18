@@ -30,12 +30,39 @@ OR git add .//添加当前当前所有更改到暂存区
 rm xxx.txt  //删除xxx.txt，可git checkout -- xxx.txt从版本库恢复
 git rm xxx.txt //从版本库中删除该文件,需重新提交
 
-git statue //查看仓库状态
+git status //查看仓库状态
 
 git commit -m "your description"
 
 git log   //查看提交的版本信息
 
 4.推送到远程库
+git remote -v //显示远程库信息
 
-git remote 
+//事先在github上添加了电脑的SSH
+git remote add local git@github.com:your name/your repository.git
+
+//不必添加SSH,但push时需要输入github用户名和密码
+git remote add local https://github.com:your name/your repository.git
+
+local是远程库，名字可自定
+
+git push local master
+
+
+这里的描述顺序是从github上clone仓库开始的，如果是先在本地创建仓库，
+可以
+mkdir repository
+
+git init repository //用git管理该仓库
+
+cd repository
+
+开始添加内容吧，以1，3，4的步骤推送至github就行了
+
+
+
+
+
+
+
