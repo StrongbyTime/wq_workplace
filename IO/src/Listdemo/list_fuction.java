@@ -15,11 +15,12 @@ public class list_fuction {
 		}
 		**/
 //		±éÀú
+/**
 		int array[]={1,2,5,9};
 		for(int a:array){
 			System.out.print(a+" ");
 		}
-		
+**/
 		System.out.println();
 		
 		if(file.isDirectory()){
