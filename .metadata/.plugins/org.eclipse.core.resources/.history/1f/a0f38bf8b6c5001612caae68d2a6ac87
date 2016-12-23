@@ -1,0 +1,10 @@
+package InetAddress;
+import java.net.*;
+public class InetAddressdemo {
+	public static void main(String[] args){
+		InetAddress ip1= InetAddress.getLocalHost();
+		System.out.println(ip1.getCanonicalHostName());
+	}
+	
+	
+}

@@ -1,0 +1,32 @@
+package InetAddress;
+import java.net.*;
+public class InetAddressdemo {
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) throws UnknownHostException{
+		InetAddress ip1= InetAddress.getLocalHost();
+		System.out.println(ip1.getCanonicalHostName());
+		System.out.println(ip1.getHostAddress());
+		System.out.println(ip1.getHostName());
+		System.out.println(ip1.getLocalHost());
+		System.out.println(ip1.getLoopbackAddress());
+		
+		InetAddress ip2=InetAddress.getByName("www.baidu.com");
+		System.out.println(ip2.getCanonicalHostName());
+		System.out.println(ip2.getHostAddress());
+		System.out.println(ip2.getHostName());
+		
+		InetAddress ip3=InetAddress.getByAddress(ip2.getAddress());
+		System.out.println(ip3.getCanonicalHostName());
+		System.out.println(ip3.getHostAddress());
+		System.out.println(ip3.getHostName());
+	}
+/*1. 使用getLocalHost创建InetAddress对象
+
+　　在这种情况下getCanonicalHostName方法和getHostName方法得到的都是本机名。
+
+　　2. 使用域名创建InetAddress对象
+
+　　在这种情况下，getCanonicalHostName方法是否要访问DNS服务器，取
+决于DNS服务器如何解释主机名和主机别名。也就是说，是否在创建InetAddress对象
+时就将主机名和主机别名都确定了。在前面已经讲过，使用域名创建InetAddress对象后，调用getHostName方法不会访问DNS服务器。但getCanonicalHostName方法就不一定了。这和DNS服务器的设置有关。*/
+}

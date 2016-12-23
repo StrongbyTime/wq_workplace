@@ -10,8 +10,8 @@ public class File_fuction {
 		String pathName=input.next();
 //		创建一个指定路径的file对象
 		File file=new File(pathName);	//此时并未创建文件
-		
-		if(!file.exists()){
+
+	if(!file.exists()){
 			try{
 				file.createNewFile();
 			}

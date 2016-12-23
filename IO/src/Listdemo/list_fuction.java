@@ -18,7 +18,7 @@ public class list_fuction {
 /**
 		int array[]={1,2,5,9};
 		for(int a:array){
-			System.out.print(a+" ");
+		 System.out.print(a+" ");
 		}
 **/
 		System.out.println();

@@ -1,8 +1,13 @@
 package File_copy;
 
+import java.io.*;
 //从键盘输入数据，并输出到文件myfile.txt中
 public class moveFile {
-
+	
+	FileOutputStream file=null;
+	//try{
+	//	file=
+	//}
 	public static void main(String[] args) {
 		
 

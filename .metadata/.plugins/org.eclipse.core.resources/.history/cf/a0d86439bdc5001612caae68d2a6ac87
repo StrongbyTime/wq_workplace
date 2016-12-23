@@ -1,0 +1,13 @@
+package URL;
+import java.net.*;
+public class URLdemo {
+
+	public static void main(String[] args) throws MalformedURLException {
+		URL search=new URL("http://download.csdn.net/detail/qq_31383345/9708756");
+//		URL tuto=new URL(search," ");
+		System.out.println(search.getProtocol());
+		System.out.println(search.getHost());
+		System.out.println(search.getPath());
+	}
+
+}

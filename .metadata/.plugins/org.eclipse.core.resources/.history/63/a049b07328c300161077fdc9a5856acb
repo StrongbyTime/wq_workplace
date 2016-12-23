@@ -1,0 +1,8 @@
+package thread_Ex;
+
+public class Mainthread {
+	public static void main(String[] arhs){
+		Thread  t=new Thread();
+		System.out.println("主线程是"+ t);
+	}
+}

@@ -1,0 +1,13 @@
+import javax.swing.JFrame;
+public class Frame extends JFrame {
+	public Frame(){
+		super("ÎÒµÄ´°¿Ú");
+		this.setSize(300,200);
+		this.setLocation(500,500);
+		
+	}
+	public static void main(String[] args){
+		Frame frame=new Frame();
+		frame.setVisible(true);
+	}
+}

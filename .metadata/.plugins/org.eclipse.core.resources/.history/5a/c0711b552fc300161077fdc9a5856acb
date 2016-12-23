@@ -1,0 +1,44 @@
+package thread_Ex;
+//创建java线程的两种方法
+
+/*
+ * @Date 12.16
+ */
+class Thread1 extends Thread {
+//	重写run方法
+	public void run(){
+		System.out.println(Thread.currentThread().getName());	
+	}
+	
+}
+
+class Thread2 extends Thread{
+	public Thread2(String name){
+		super(name);
+	}
+	public void run(){
+		System.out.println(Thread.currentThread().getName());
+	}
+}
+
+
+class Thread3 implements Runnable{
+	public void run(){
+		System.out.println(Thread.currentThread().getName());	
+	}
+}
+
+
+
+public class ThreadDemo{
+	public static void main(String[] args){
+		Thread1 thread1 =new Thread1();
+		thread1.setName("wang");
+		thread1.start();
+		Thread2 thread2 =new Thread2("wang");
+		thread2.start();
+		Thread3 thread3 =new Thread3();
+		new Thread(thread3).start();
+
+	}
+}

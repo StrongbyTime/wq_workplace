@@ -1,0 +1,14 @@
+package InetAddress;
+import java.net.*;
+public class InetAddressdemo {
+	public static void main(String[] args) throws UnknownHostException{
+		InetAddress ip1= InetAddress.getCanonicalHostName();
+		System.out.println(ip1.getCanonicalHostName());
+		System.out.println(ip1.getHostAddress());
+		System.out.println(ip1.getHostName());
+		System.out.println(ip1.getLocalHost());
+		System.out.println(ip1.getLoopbackAddress());
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package basic;
+import javax.swing.JFrame;
+public class FrameDemo extends JFrame {
+	public FrameDemo(){
+		super("ÎÒµÄ´°¿Ú");
+		this.setSize(300,500);
+		this.setLocation(200,500);
+		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args){
+		FrameDemo frame=new FrameDemo();
+		frame.setVisible(true);
+	}
+}
